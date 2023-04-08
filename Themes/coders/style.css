@@ -107,6 +107,9 @@
 
   /* responsive  */
   @media only screen and (max-width: 600px) {
+    h1{
+      font-size: 3rem;
+    }
     #card-section{
       display: grid;
       grid-template-columns: repeat(3,1fr);
