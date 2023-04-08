@@ -109,6 +109,7 @@
   @media only screen and (max-width: 600px) {
     h1{
       font-size: 3rem;
+      margin-top: -10vh;
     }
     #card-section{
       display: grid;
@@ -120,8 +121,8 @@
     .back-card,
     .front-card {
      
-        height: 5rem;
-        width: 5rem;
+        height: 6rem;
+        width: 6rem;
     }
 
     /* Styles for devices with a maximum width of 600px */
