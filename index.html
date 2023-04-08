@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto 10vw;
+            border: 2px solid black;
+            margin-top: 10vh;
+            background-color: rgb(39, 39, 65);
+            color: white;
+        }
+
+        .theme-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            gap: 2rem;
+        }
+
+        .option {
+            cursor: pointer;
+        }
+
+        .option img {
+            border: 2px solid black;
+            height: 18rem;
+            transition: all 0.2s linear;
+        }
+
+        .option img:hover {
+            background-color: #ffff09;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 3rem;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 600px) {
+  /* Styles for devices with a maximum width of 600px */
+  body{
+    margin-top: 2vh;
+  }
+  h1{
+        font-size: 3rem
+    }
+    .theme-section{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    margin-top: 10vh;
+    }
+    .option img {
+        height: 10rem;
+    }
+    a{
+        font-size: 2rem
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+
+
+  /* Styles for devices with a minimum width of 601px and a maximum width of 960px */
+}
+
+@media only screen and (min-width: 961px) {
+  /* Styles for devices with a minimum width of 961px */
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        Start Your Image Game By
+        <span style="color: yellow">Selecting</span> theme
+    </h1>
+    <div class="theme-section">
+        <div class="vsec option">
+            <a id="cartoon" href="Themes/cartoon/index.html"><img src="Themes/cartoon/img/doremon.png" alt="" srcset="" />Cartoon</a>
+        </div>
+        <div class="rsec option"><a href="Themes/dress/index.html"> <img src="Themes/dress/img/d3.png" alt="" srcset="" />Dresses</a></div>
+        <div class="ssec option">
+            <a href="Themes/coders/index.html"> <img src="Themes/coders/img/html5.png" alt="" srcset="" />Coders</a>
+        </div>
+    </div>
+</body>
+
+</html>
